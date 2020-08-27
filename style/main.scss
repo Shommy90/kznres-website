@@ -18,17 +18,22 @@ body {
   max-width: 1800px;
   width: 100%;
   padding: 0 10px;
+  margin: 0 auto;
 }
 
 .container {
   max-width: 1180px;
   width: 100%;
   padding: 0 10px;
+  margin: 0 auto;
 }
 
 header {
   padding: 20px 0;
-  background-color: $primary-color;
+  background-color: rgba($primary-color, 0.9);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 
 .header-holder {
@@ -45,10 +50,13 @@ a.logo {
 }
 
 .logo__img {
-  width: 60px;
+  width: 183px;
   height: 60px;
-  border: 1px solid red;
-  margin-right: 15px;
+}
+
+#KZN_LOGO_NEWNEW {
+  width: 100%;
+  height: 100%;
 }
 
 .nav-holder {
@@ -103,5 +111,84 @@ span.triangle {
 .hero__inner-bg {
   height: 100%;
   background-color: rgba($primary-color, 0.9);
-  padding: 180px 0 150px;
+  padding: 280px 0 150px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("../assets/graphic_hero_bcg_transparent.svg");
+  background-position: 600px 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__headline {
+  width: 100%;
+  height: 555px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero__headline-img {
+  max-width: 555px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.hero__headline-title {
+  z-index: 2;
+}
+
+.hero__radar--left {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 140px;
+  height: 140px;
+}
+
+.hero__radar--right {
+  position: absolute;
+  right: -110px;
+  top: -80px;
+}
+
+.hero__headline-title h1 {
+  font-weight: $regular;
+  font-size: 70px;
+  line-height: 90px;
+  letter-spacing: 10px;
+  text-align: center;
+  color: #f7f7f7;
+}
+
+.hero__about-subtitle {
+  text-align: center;
+  font-size: 30px;
+  font-weight: $regular;
+  letter-spacing: 3px;
+  line-height: 42px;
+  color: #fff;
+}
+
+.hero__about-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: $bold;
+  letter-spacing: 3px;
+  line-height: 42px;
+  color: #fff;
+}
+
+.hero__about p {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 28px;
+  color: #fff;
+  font-weight: $light;
 }
