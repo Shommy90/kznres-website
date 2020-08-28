@@ -125,6 +125,7 @@ nav.navigation {
 }
 
 // HERO
+
 .hero {
   height: 1700px;
   background-image: url("../assets/bg-hero.png");
@@ -275,4 +276,55 @@ nav.navigation {
 .arrrows-hero {
   transform: rotate(90deg);
   position: absolute;
+}
+
+// VISION
+
+.vision {
+  padding: 80px;
+  background-color: rgba($secondary-color, 0.3);
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  li {
+    width: 33%;
+    padding: 0 60px;
+
+    &:nth-child(2) {
+      border-right: 1px solid $secondary-color;
+      border-left: 1px solid $secondary-color;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  h3 {
+    color: $secondary-color;
+    font-size: 24px;
+    font-weight: $bold;
+    letter-spacing: 5px;
+    line-height: 29px;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  p {
+    text-align: center;
+    font-size: 14px;
+    color: $secondary-color;
+    line-height: 20px;
+  }
+}
+
+.vision__container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
 }

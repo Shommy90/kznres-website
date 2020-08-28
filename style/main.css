@@ -836,3 +836,55 @@ nav.navigation a {
           transform: rotate(90deg);
   position: absolute;
 }
+
+.vision {
+  padding: 80px;
+  background-color: rgba(226, 72, 72, 0.3);
+}
+
+.vision ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.vision li {
+  width: 33%;
+  padding: 0 60px;
+}
+
+.vision li:nth-child(2) {
+  border-right: 1px solid #e24848;
+  border-left: 1px solid #e24848;
+}
+
+.vision img {
+  display: block;
+  margin: 0 auto;
+}
+
+.vision h3 {
+  color: #e24848;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  line-height: 29px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.vision p {
+  text-align: center;
+  font-size: 14px;
+  color: #e24848;
+  line-height: 20px;
+}
+
+.vision__container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
