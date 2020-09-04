@@ -1284,3 +1284,144 @@ nav.navigation a {
   cursor: pointer;
   border: none;
 }
+
+.contact__radar--left {
+  position: absolute;
+  left: 100px;
+  bottom: 100px;
+  width: 140px;
+  height: 140px;
+  z-index: -1;
+}
+
+.contact__radar--right {
+  position: absolute;
+  right: -120px;
+  z-index: -1;
+}
+
+#map {
+  width: 100%;
+  height: 340px;
+}
+
+.map {
+  height: 340px;
+}
+
+.map .container {
+  position: relative;
+}
+
+.map__contact-box {
+  width: 280px;
+  height: 280px;
+  background-color: #13274c;
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  z-index: 99;
+  padding: 50px;
+}
+
+.map__contact-box h4 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 24px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.map__contact-box > p,
+.map__contact-box > a {
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  line-height: 24px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.contact-box__socials {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 10px;
+}
+
+.contact-box__socials a {
+  font-size: 26px;
+  margin: 0 10px;
+}
+
+footer {
+  padding: 20px 0;
+  background-color: #13274c;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__logo-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.footer__logo {
+  margin-right: 50px;
+}
+
+.footer__copyright {
+  color: #fff;
+  font-size: 11px;
+  line-height-step: 14px;
+  font-weight: 400;
+}
+
+.footer__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__nav li {
+  margin-right: 20px;
+}
+
+.footer__nav li:last-child {
+  margin-right: 0;
+}
+
+.footer__nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  font-size: 11px;
+  line-height-step: 20px;
+  font-weight: 400;
+}

@@ -318,6 +318,16 @@
     </section>
 
     <section class="contact">
+      <img
+        class="contact__radar--left"
+        src="assets/gray_bcg_graphic.svg"
+        alt="radar left"
+      />
+      <img
+        class="contact__radar--right"
+        src="assets/gray_bcg_graphic.svg"
+        alt="radar left"
+      />
       <div class="contact__wrapper">
         <h3>CONTACT</h3>
         <h2>HAVE SOME QUESTIONS?</h2>
@@ -348,6 +358,64 @@
         </form>
       </div>
     </section>
+
+    <section class="map">
+      <div class="container">
+        <div class="map__contact-box">
+          <h4>CONTACT</h4>
+          <p class="contact-box__address">Tomšičeva 6,</p>
+          <p>1000 Ljubljana, SI</p>
+          <p class="contact-box__phone">+386 41 321 543</p>
+          <a class="contact-box__email" href="mailto:info@kznres.com"
+            >info@kznres.com</a
+          >
+
+          <div class="contact-box__socials">
+            <img
+              src="assets/arrow_icon.svg"
+              alt="contact box arrows"
+              class="contact-box__arrows"
+            />
+            <a class="nav-socials__link" href="#">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a class="nav-socials__link" href="#">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="map"></div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer__logo-holder">
+          <img class="footer__logo" src="assets/logo.svg" alt="logo footer" />
+          <p class="footer__copyright">© 2019 KZNRES All rights reserved</p>
+        </div>
+
+        <div class="footer__nav">
+          <ul>
+            <li>
+              <a href="#">Cookies</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms Of Service</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/maps.js"></script>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHUUMp7u5jykei6lbEkYyFKRbySijOYhM&callback=initMap"
+    ></script>
 
     <script src="js/parallax.js"></script>
   </body>
