@@ -10,6 +10,10 @@ $regular: 400;
 $medium: 500;
 $bold: 700;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
