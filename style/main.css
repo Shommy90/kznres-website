@@ -596,7 +596,7 @@ input {
 }
 
 header {
-  padding: 20px 0;
+  padding: 15px 0;
   background-color: rgba(19, 39, 76, 0.9);
   position: fixed;
   width: 100%;
@@ -614,6 +614,10 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+
+.navbar {
+  padding: 0;
 }
 
 button.navbar-toggler {
@@ -645,8 +649,10 @@ a.logo {
 }
 
 .logo__img {
-  width: 183px;
-  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 160px;
 }
 
 .logo__img img {
@@ -721,15 +727,13 @@ ul.navbar-nav {
 }
 
 .hero {
-  height: 1700px;
-  background-image: url("../assets/bg-hero.png");
+  background-image: url("../assets/bg-hero.jpg");
   background-size: cover;
 }
 
 .hero__inner-bg {
   height: 100%;
   background-color: rgba(19, 39, 76, 0.9);
-  padding: 280px 0 150px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -746,6 +750,23 @@ ul.navbar-nav {
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
+  padding-bottom: 100px;
+}
+
+.hero__headline-holder {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+  margin-bottom: 80px;
 }
 
 .hero__headline {
@@ -769,10 +790,12 @@ ul.navbar-nav {
 }
 
 .hero__headline-img {
-  max-width: 555px;
-  width: 100%;
-  height: 100%;
   position: absolute;
+}
+
+.hero__headline-img img {
+  max-width: 400px;
+  width: 100%;
 }
 
 .hero__headline-title {
@@ -781,7 +804,7 @@ ul.navbar-nav {
 
 .hero__radar--left {
   position: absolute;
-  top: 100px;
+  top: 250px;
   left: 50px;
   width: 140px;
   height: 140px;
@@ -790,13 +813,13 @@ ul.navbar-nav {
 .hero__radar--right {
   position: absolute;
   right: -110px;
-  top: -80px;
+  top: 80px;
 }
 
 .hero__headline-title h1 {
   font-weight: 400;
-  font-size: 70px;
-  line-height: 90px;
+  font-size: 60px;
+  line-height: 80px;
   letter-spacing: 10px;
   text-align: center;
   color: #f7f7f7;
@@ -804,19 +827,19 @@ ul.navbar-nav {
 
 .hero__about-subtitle {
   text-align: center;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 400;
   letter-spacing: 3px;
-  line-height: 42px;
+  line-height: 38px;
   color: #fff;
 }
 
 .hero__about-title {
   text-align: center;
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 3px;
-  line-height: 42px;
+  line-height: 38px;
   color: #fff;
 }
 
@@ -943,7 +966,7 @@ ul.navbar-nav {
 
 .vision h3 {
   color: #e24848;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: 5px;
   line-height: 29px;
@@ -966,13 +989,13 @@ ul.navbar-nav {
 }
 
 .our-work {
-  padding: 140px 0;
+  padding: 120px 0;
 }
 
 .our-work h3 {
   font-weight: 400;
-  font-size: 30px;
-  line-height: 42px;
+  font-size: 26px;
+  line-height: 38px;
   text-align: center;
   letter-spacing: 3px;
   color: #13274c;
@@ -980,8 +1003,8 @@ ul.navbar-nav {
 
 .our-work h2 {
   font-weight: 700;
-  font-size: 34px;
-  line-height: 42px;
+  font-size: 30px;
+  line-height: 38px;
   letter-spacing: 3.4px;
   text-align: center;
   margin-bottom: 20px;
@@ -1041,8 +1064,8 @@ ul.navbar-nav {
 
 .pulsing__content h3 {
   font-weight: 700;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 26px;
+  line-height: 34px;
   letter-spacing: 0.7px;
   color: #13274c;
 }
@@ -1055,7 +1078,7 @@ ul.navbar-nav {
 }
 
 .pulsing__radar {
-  max-width: 675px;
+  max-width: 575px;
   width: 100%;
   position: absolute;
   margin: auto;
@@ -1241,7 +1264,7 @@ ul.navbar-nav {
 
 .contact {
   position: relative;
-  padding: 140px 0 135px;
+  padding: 120px 0;
 }
 
 .contact__wrapper {
@@ -1458,9 +1481,43 @@ footer .container {
   font-weight: 400;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1400px) {
+  body {
+    font-size: 14px;
+  }
   ul.navbar-nav {
     margin-right: 80px;
+  }
+  .hero__headline-img img {
+    max-width: 300px;
+  }
+  .hero__headline-title h1 {
+    font-size: 46px;
+    line-height: 54px;
+  }
+  .hero__radar--right {
+    width: 250px;
+  }
+  .pulsing__radar {
+    max-width: 450px;
+  }
+  .pulsing__content h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .our-team__radar--left {
+    opacity: 0.4;
+    width: 200px;
+  }
+  .our-work {
+    padding: 80px 0;
+  }
+  .our-team__img-holder {
+    max-width: 140px;
+    height: 140px;
+  }
+  .contact {
+    padding: 70px 0;
   }
 }
 
@@ -1495,9 +1552,6 @@ footer .container {
   }
   .vision li {
     padding: 0 20px;
-  }
-  .our-team__radar--left {
-    opacity: 0.4;
   }
   .partners {
     padding-bottom: 60px;
@@ -1549,9 +1603,6 @@ footer .container {
 }
 
 @media (max-width: 576px) {
-  body {
-    font-size: 14px;
-  }
   .hero__headline-title h1 {
     font-size: 40px;
     line-height: 50px;
@@ -1570,12 +1621,12 @@ footer .container {
     padding: 150px 0 70px;
   }
   .hero__about-subtitle {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 22px;
+    line-height: 32px;
   }
   .hero__about-title {
-    font-size: 30px;
-    line-height: 38px;
+    font-size: 26px;
+    line-height: 32px;
   }
   .vision ul {
     -ms-flex-wrap: wrap;
@@ -1595,12 +1646,12 @@ footer .container {
     padding-bottom: 100px;
   }
   .our-work h3 {
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 22px;
+    line-height: 30px;
   }
   .our-work h2 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 32px;
   }
   .our-work p {
     font-size: 16px;
@@ -1713,9 +1764,6 @@ footer .container {
 }
 
 @media (max-width: 414px) {
-  .hero {
-    height: 1200px;
-  }
   .hero__headline-img {
     opacity: 0.3;
   }
