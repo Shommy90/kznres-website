@@ -598,7 +598,7 @@ input {
 header {
   padding: 15px 0;
   background-color: rgba(19, 39, 76, 0.9);
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 999;
 }
