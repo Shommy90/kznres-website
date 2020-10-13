@@ -200,7 +200,7 @@ ul.navbar-nav {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   position: relative;
   margin-bottom: 100px;
 }
@@ -231,7 +231,7 @@ ul.navbar-nav {
 
 .hero__radar--left {
   position: absolute;
-  top: 250px;
+  top: 150px;
   left: 50px;
   width: 140px;
   height: 140px;
@@ -240,7 +240,7 @@ ul.navbar-nav {
 .hero__radar--right {
   position: absolute;
   right: -110px;
-  top: 80px;
+  top: 0px;
 }
 
 .hero__headline-title h1 {
@@ -285,7 +285,8 @@ ul.navbar-nav {
 }
 
 .hero_dev--holder {
-  position: relative;
+  position: absolute;
+  bottom: 50px;
 }
 
 .hero__dev {
@@ -311,7 +312,7 @@ ul.navbar-nav {
   align-items: center;
   position: absolute;
   transform: rotate(270deg);
-  right: 0;
+  right: -50px;
   top: -80px;
 
   .arrows {
@@ -321,7 +322,7 @@ ul.navbar-nav {
 
   p {
     font-weight: $light;
-    color: $secondary-color;
+    color: #fff;
     letter-spacing: 1px;
     user-select: none;
   }
@@ -999,6 +1000,15 @@ footer {
 
 // max-width 768px
 @media (max-width: 768px) {
+  button.navbar-toggler {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .navbar-toggler-icon {
+    height: auto;
+  }
+
   .hero__radar--left {
     top: -100px;
   }
@@ -1047,6 +1057,7 @@ footer {
   .hero__headline-title h1 {
     font-size: 40px;
     line-height: 50px;
+    letter-spacing: 0.2rem;
   }
 
   .hero__radar--left,
@@ -1226,6 +1237,22 @@ footer {
 
   .footer__nav {
     margin-bottom: 20px;
+  }
+
+  .pulsing__radar {
+    display: none;
+  }
+
+  .hero__inner-bg {
+    padding-top: 0;
+  }
+
+  .hero__headline-holder {
+    margin-bottom: 0;
+  }
+
+  .hero_dev--holder {
+    display: none;
   }
 }
 
